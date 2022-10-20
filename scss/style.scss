@@ -1,0 +1,60 @@
+:root {
+  --background-1: #3a4663;
+  --background-2: #e6e6e6;
+  --background-3: #17062a;
+  --calculator-background-1: #242d44;
+  --calculator-background-2: #d2cdcd;
+  --calculator-background-3: #1e0936;
+  --display-background-1: #181f33;
+  --display-background-2: #eeeeee;
+  --display-background-3: #1e0936;
+  --text-1: #ffffff;
+  --text-2: #36362c;
+  --text-3: #ffe53d;
+  --calculator-text-1: #434a59;
+  --calculator-text-2: #36362c;
+  --calculator-text-3: #ffe53d;
+  --main-button-1: #eae3dc;
+  --main-button-2: #e5e4e1;
+  --main-button-3: #331c4d;
+  --main-inset-1: inset 0px -4px 0px #b3a497;
+  --main-inset-2: inset 0px -4px 0px #a79e91;
+  --main-inset-3: inset 0px -4px 0px #881c9e;
+  --secondary-button-1: #647198;
+  --secondary-button-2: #378187;
+  --secondary-button-3: #56077c;
+  --secondary-inset-1: inset 0px -4px 0px #414e73;
+  --secondary-inset-2: inset 0px -4px 0px #1b6066;
+  --secondary-inset-3: inset 0px -4px 0px #be15f4;
+  --equal-button-1: #d03f2f;
+  --equal-button-2: #c85402;
+  --equal-button-3: #00ded0;
+  --equal-inset-1: inset 0px -4px 0px #93261a;
+  --equal-inset-2: inset 0px -4px 0px #873901;
+  --equal-inset-3: inset 0px -4px 0px #6cf9f1;
+  --equal-text-1: #ffffff;
+  --equal-text-2: #ffffff;
+  --equal-text-3: #1a2327;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "League Spartan", sans-serif;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+  background-color: var(--navy);
+  color: var(--silver);
+}
