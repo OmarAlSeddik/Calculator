@@ -2,18 +2,18 @@
   --background-1: #3a4663;
   --background-2: #e6e6e6;
   --background-3: #17062a;
-  --calculator-background-1: #242d44;
-  --calculator-background-2: #d2cdcd;
-  --calculator-background-3: #1e0936;
-  --display-background-1: #181f33;
-  --display-background-2: #eeeeee;
-  --display-background-3: #1e0936;
   --text-1: #ffffff;
   --text-2: #36362c;
   --text-3: #ffe53d;
+  --calculator-background-1: #242d44;
+  --calculator-background-2: #d2cdcd;
+  --calculator-background-3: #1e0936;
   --calculator-text-1: #434a59;
   --calculator-text-2: #36362c;
   --calculator-text-3: #ffe53d;
+  --display-background-1: #181f33;
+  --display-background-2: #eeeeee;
+  --display-background-3: #1e0936;
   --main-button-1: #eae3dc;
   --main-button-2: #e5e4e1;
   --main-button-3: #331c4d;
@@ -43,18 +43,77 @@
   padding: 0;
   border: none;
   font-family: "League Spartan", sans-serif;
-  text-transform: uppercase;
   user-select: none;
 }
 
-main {
-  width: 100vw;
+.body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   padding: 1.5rem;
-  background-color: var(--navy);
-  color: var(--silver);
+  font-weight: 700;
+}
+.body--1 {
+  background-color: var(--background-1);
+  color: var(--text-1);
+}
+.body--2 {
+  background-color: var(--background-2);
+  color: var(--text-2);
+}
+.body--3 {
+  background-color: var(--background-3);
+  color: var(--text-3);
+}
+
+.header {
+  width: min(100vw, 33.75rem);
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: 2rem;
+  line-height: 1.8125rem;
+  letter-spacing: -0.03334rem;
+}
+
+.display {
+  width: min(100vw, 33.75rem);
+  border-radius: 0.625rem;
+  padding: 2.25rem 2rem;
+  font-size: 3.5rem;
+  line-height: 3.25rem;
+  margin-bottom: 1.5rem;
+  text-align: right;
+  letter-spacing: -0.05875rem;
+}
+.display--1 {
+  background-color: var(--display-background-1);
+  color: var(--text-1);
+}
+.display--2 {
+  background-color: var(--display-background-2);
+  color: var(--text-2);
+}
+.display--3 {
+  background-color: var(--display-background-3);
+  color: var(--text-3);
+}
+
+.calculator {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.calculator--1 {
+  background-color: var(--calculator-background-1);
+}
+.calculator--2 {
+  background-color: var(--calculator-background-2);
+}
+.calculator--3 {
+  background-color: var(--calculator-background-3);
 }/*# sourceMappingURL=style.css.map */
