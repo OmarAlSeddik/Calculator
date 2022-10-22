@@ -1,64 +1,20 @@
 :root {
   --background: #3a4663;
-  --background-1: #3a4663;
-  --background-2: #e6e6e6;
-  --background-3: #17062a;
   --text: #ffffff;
-  --text-1: #ffffff;
-  --text-2: #36362c;
-  --text-3: #ffe53d;
   --calculator-background: #242d44;
-  --calculator-background-1: #242d44;
-  --calculator-background-2: #d2cdcd;
   --calculator-background-3: #1e0936;
   --display-background: #181f33;
-  --display-background-1: #181f33;
-  --display-background-2: #eeeeee;
-  --display-background-3: #1e0936;
   --main-button: #eae3dc;
-  --main-button-1: #eae3dc;
-  --main-button-2: #e5e4e1;
-  --main-button-3: #331c4d;
   --main-inset: inset 0px -4px 0px #b3a497;
-  --main-inset-1: inset 0px -4px 0px #b3a497;
-  --main-inset-2: inset 0px -4px 0px #a79e91;
-  --main-inset-3: inset 0px -4px 0px #881c9e;
   --main-inset-clicked: inset 0px 0 0px #b3a497;
-  --main-inset-clicked-1: inset 0px 0 0px #b3a497;
-  --main-inset-clicked-2: inset 0px 0 0px #a79e91;
-  --main-inset-clicked-3: inset 0px 0 0px #881c9e;
   --main-text: #434a59;
-  --main-text-1: #434a59;
-  --main-text-2: #36362c;
-  --main-text-3: #ffe53d;
   --secondary-button: #647198;
-  --secondary-button-1: #647198;
-  --secondary-button-2: #378187;
-  --secondary-button-3: #56077c;
   --secondary-inset: inset 0px -4px 0px #414e73;
-  --secondary-inset-1: inset 0px -4px 0px #414e73;
-  --secondary-inset-2: inset 0px -4px 0px #1b6066;
-  --secondary-inset-3: inset 0px -4px 0px #be15f4;
   --secondary-inset-clicked: inset 0px 0 0px #414e73;
-  --secondary-inset-clicked-1: inset 0px 0 0px #414e73;
-  --secondary-inset-clicked-2: inset 0px 0 0px #1b6066;
-  --secondary-inset-clicked-3: inset 0px 0 0px #be15f4;
   --equal-button: #d03f2f;
-  --equal-button-1: #d03f2f;
-  --equal-button-2: #c85402;
-  --equal-button-3: #00ded0;
   --equal-inset: inset 0px -4px 0px #93261a;
-  --equal-inset-1: inset 0px -4px 0px #93261a;
-  --equal-inset-2: inset 0px -4px 0px #873901;
-  --equal-inset-3: inset 0px -4px 0px #6cf9f1;
   --equal-inset-clicked: inset 0px 0 0px #93261a;
-  --equal-inset-clicked-1: inset 0px 0 0px #93261a;
-  --equal-inset-clicked-2: inset 0px 0 0px #873901;
-  --equal-inset-clicked-3: inset 0px 0 0px #6cf9f1;
   --equal-text: #ffffff;
-  --equal-text-1: #ffffff;
-  --equal-text-2: #ffffff;
-  --equal-text-3: #1a2327;
 }
 
 * {
@@ -123,15 +79,6 @@
     height: 1rem;
     border-radius: 50%;
     position: relative;
-    &--1 {
-      left: 0;
-    }
-    &--2 {
-      left: calc(50% - 0.5rem);
-    }
-    &--3 {
-      left: calc(100% - 1rem);
-    }
   }
 }
 
@@ -150,7 +97,7 @@
   margin-bottom: 1.5rem;
   text-align: right;
   letter-spacing: -0.05875rem;
-  background-color: var(--display-background-1);
+  background-color: var(--display-background);
   color: var(--text);
 }
 
@@ -161,7 +108,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  background-color: var(--calculator-background-1);
+  background-color: var(--calculator-background);
 }
 
 .button {
@@ -172,9 +119,9 @@
   font-weight: bold;
   cursor: pointer;
   &--main {
-    background-color: var(--main-button-1);
-    box-shadow: var(--main-inset-1);
-    color: var(--main-text-1);
+    background-color: var(--main-button);
+    box-shadow: var(--main-inset);
+    color: var(--main-text);
     &:active {
       margin-top: 0.25rem;
       height: 3.75rem;
@@ -185,8 +132,8 @@
     font-size: 1.75rem;
     line-height: 1.625rem;
     letter-spacing: -0.03rem;
-    background-color: var(--secondary-button-1);
-    box-shadow: var(--secondary-inset-1);
+    background-color: var(--secondary-button);
+    box-shadow: var(--secondary-inset);
     color: white;
     &:active {
       margin-top: 0.25rem;
@@ -196,9 +143,9 @@
   }
   &--equal {
     grid-column: span 2;
-    background-color: var(--equal-button-1);
-    box-shadow: var(--equal-inset-1);
-    color: var(--equal-text-1);
+    background-color: var(--equal-button);
+    box-shadow: var(--equal-inset);
+    color: var(--equal-text);
     &:active {
       margin-top: 0.25rem;
       height: 3.75rem;
