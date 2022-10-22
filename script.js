@@ -13,6 +13,7 @@ const applyTheme = () => {
     root.style.setProperty("--calculator-background", "#242d44");
     root.style.setProperty("--display-background", "#181f33");
     root.style.setProperty("--main-button", "#eae3dc");
+    root.style.setProperty("--main-button-hover", "#fffffe");
     root.style.setProperty("--main-inset", "inset 0px -4px 0px #b3a497");
     root.style.setProperty(
       "--main-inset-clicked",
@@ -20,12 +21,14 @@ const applyTheme = () => {
     );
     root.style.setProperty("--main-text", "#434a59");
     root.style.setProperty("--secondary-button", "#647198");
+    root.style.setProperty("--secondary-button-hover", "#a2b2e1");
     root.style.setProperty("--secondary-inset", "inset 0px -4px 0px #414e73");
     root.style.setProperty(
       "--secondary-inset-clicked",
       "inset 0px -2px 0px #414e73"
     );
     root.style.setProperty("--equal-button", "#d03f2f");
+    root.style.setProperty("--equal-button-hover", "#f96b5b");
     root.style.setProperty("--equal-inset", "inset 0px -4px 0px #93261a");
     root.style.setProperty(
       "--equal-inset-clicked",
@@ -40,6 +43,7 @@ const applyTheme = () => {
     root.style.setProperty("--calculator-background", "#d2cdcd");
     root.style.setProperty("--display-background", "#eeeeee");
     root.style.setProperty("--main-button", "#e5e4e1");
+    root.style.setProperty("--main-button-hover", "#ffffff");
     root.style.setProperty("--main-inset", "inset 0px -4px 0px #a79e91");
     root.style.setProperty(
       "--main-inset-clicked",
@@ -47,12 +51,14 @@ const applyTheme = () => {
     );
     root.style.setProperty("--main-text", "#36362c");
     root.style.setProperty("--secondary-button", "#378187");
+    root.style.setProperty("--secondary-button-hover", "#62b5bc");
     root.style.setProperty("--secondary-inset", "inset 0px -4px 0px #1b6066");
     root.style.setProperty(
       "--secondary-inset-clicked",
       "inset 0px -2px 0px #1b6066"
     );
     root.style.setProperty("--equal-button", "#c85402");
+    root.style.setProperty("--equal-button-hover", "#ff8a38");
     root.style.setProperty("--equal-inset", "inset 0px -4px 0px #873901");
     root.style.setProperty(
       "--equal-inset-clicked",
@@ -67,6 +73,7 @@ const applyTheme = () => {
     root.style.setProperty("--calculator-background", "#1e0936");
     root.style.setProperty("--display-background", "#1e0936");
     root.style.setProperty("--main-button", "#331c4d");
+    root.style.setProperty("--main-button-hover", "#6c34ac");
     root.style.setProperty("--main-inset", "inset 0px -4px 0px #881c9e");
     root.style.setProperty(
       "--main-inset-clicked",
@@ -74,12 +81,14 @@ const applyTheme = () => {
     );
     root.style.setProperty("--main-text", "#ffe53d");
     root.style.setProperty("--secondary-button", "#56077c");
+    root.style.setProperty("--secondary-button-hover", "#8631af");
     root.style.setProperty("--secondary-inset", "inset 0px -4px 0px #be15f4");
     root.style.setProperty(
       "--secondary-inset-clicked",
       "inset 0px -2px 0px #be15f4"
     );
     root.style.setProperty("--equal-button", "#00ded0");
+    root.style.setProperty("--equal-button-hover", "#93fff8");
     root.style.setProperty("--equal-inset", "inset 0px -4px 0px #6cf9f1");
     root.style.setProperty(
       "--equal-inset-clicked",
