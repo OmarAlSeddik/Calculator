@@ -9,33 +9,51 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./dist/style.css" />
     <title>Frontend Mentor | Calculator app</title>
   </head>
   <body class="body body--1">
     <header class="header">
       <h1 class="logo">calc</h1>
-      <div class="theme-selector"></div>
+      <div class="theme">
+        <span class="theme__text">THEME</span>
+        <div class="theme__container">
+          <div class="theme__options">
+            <span class="theme__text">1</span>
+            <span class="theme__text">2</span>
+            <span class="theme__text">3</span>
+          </div>
+          <div class="theme__selector">
+            <div class="theme__indicator"></div>
+          </div>
+        </div>
+      </div>
     </header>
     <article class="display display--1">0</article>
     <main class="calculator calculator--1">
-      <button class="button button--7">7</button>
-      <button class="button button--8">8</button>
-      <button class="button button--9">9</button>
-      <button class="button button--del">DEL</button>
-      <button class="button button--4">4</button>
-      <button class="button button--5">5</button>
-      <button class="button button--6">6</button>
-      <button class="button button--plus">+</button>
-      <button class="button button--1">1</button>
-      <button class="button button--2">2</button>
-      <button class="button button--3">3</button>
-      <button class="button button--minus">-</button>
-      <button class="button button--fraction">.</button>
-      <button class="button button--0">0</button>
-      <button class="button button--div">/</button>
-      <button class="button button--mult">x</button>
-      <button class="button button--reset">RESET</button>
+      <button class="button button--main">7</button>
+      <button class="button button--main">8</button>
+      <button class="button button--main">9</button>
+      <button class="button button--secondary">DEL</button>
+      <button class="button button--main">4</button>
+      <button class="button button--main">5</button>
+      <button class="button button--main">6</button>
+      <button class="button button--main">+</button>
+      <button class="button button--main">1</button>
+      <button class="button button--main">2</button>
+      <button class="button button--main">3</button>
+      <button class="button button--main">-</button>
+      <button class="button button--main">.</button>
+      <button class="button button--main">0</button>
+      <button class="button button--main">/</button>
+      <button class="button button--main">x</button>
+      <button class="button button--secondary span-2">RESET</button>
       <button class="button button--equal">=</button>
     </main>
   </body>

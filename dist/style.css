@@ -1,37 +1,61 @@
 :root {
+  --background: #3a4663;
   --background-1: #3a4663;
   --background-2: #e6e6e6;
   --background-3: #17062a;
+  --text: #ffffff;
   --text-1: #ffffff;
   --text-2: #36362c;
   --text-3: #ffe53d;
+  --calculator-background: #242d44;
   --calculator-background-1: #242d44;
   --calculator-background-2: #d2cdcd;
   --calculator-background-3: #1e0936;
-  --calculator-text-1: #434a59;
-  --calculator-text-2: #36362c;
-  --calculator-text-3: #ffe53d;
+  --display-background: #181f33;
   --display-background-1: #181f33;
   --display-background-2: #eeeeee;
   --display-background-3: #1e0936;
+  --main-button: #eae3dc;
   --main-button-1: #eae3dc;
   --main-button-2: #e5e4e1;
   --main-button-3: #331c4d;
+  --main-inset: inset 0px -4px 0px #b3a497;
   --main-inset-1: inset 0px -4px 0px #b3a497;
   --main-inset-2: inset 0px -4px 0px #a79e91;
   --main-inset-3: inset 0px -4px 0px #881c9e;
+  --main-inset-clicked: inset 0px 0 0px #b3a497;
+  --main-inset-clicked-1: inset 0px 0 0px #b3a497;
+  --main-inset-clicked-2: inset 0px 0 0px #a79e91;
+  --main-inset-clicked-3: inset 0px 0 0px #881c9e;
+  --main-text: #434a59;
+  --main-text-1: #434a59;
+  --main-text-2: #36362c;
+  --main-text-3: #ffe53d;
+  --secondary-button: #647198;
   --secondary-button-1: #647198;
   --secondary-button-2: #378187;
   --secondary-button-3: #56077c;
+  --secondary-inset: inset 0px -4px 0px #414e73;
   --secondary-inset-1: inset 0px -4px 0px #414e73;
   --secondary-inset-2: inset 0px -4px 0px #1b6066;
   --secondary-inset-3: inset 0px -4px 0px #be15f4;
+  --secondary-inset-clicked: inset 0px 0 0px #414e73;
+  --secondary-inset-clicked-1: inset 0px 0 0px #414e73;
+  --secondary-inset-clicked-2: inset 0px 0 0px #1b6066;
+  --secondary-inset-clicked-3: inset 0px 0 0px #be15f4;
+  --equal-button: #d03f2f;
   --equal-button-1: #d03f2f;
   --equal-button-2: #c85402;
   --equal-button-3: #00ded0;
+  --equal-inset: inset 0px -4px 0px #93261a;
   --equal-inset-1: inset 0px -4px 0px #93261a;
   --equal-inset-2: inset 0px -4px 0px #873901;
   --equal-inset-3: inset 0px -4px 0px #6cf9f1;
+  --equal-inset-clicked: inset 0px 0 0px #93261a;
+  --equal-inset-clicked-1: inset 0px 0 0px #93261a;
+  --equal-inset-clicked-2: inset 0px 0 0px #873901;
+  --equal-inset-clicked-3: inset 0px 0 0px #6cf9f1;
+  --equal-text: #ffffff;
   --equal-text-1: #ffffff;
   --equal-text-2: #ffffff;
   --equal-text-3: #1a2327;
@@ -54,23 +78,61 @@
   min-height: 100vh;
   padding: 1.5rem;
   font-weight: 700;
-}
-.body--1 {
-  background-color: var(--background-1);
-  color: var(--text-1);
-}
-.body--2 {
-  background-color: var(--background-2);
-  color: var(--text-2);
-}
-.body--3 {
-  background-color: var(--background-3);
-  color: var(--text-3);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   width: min(100vw, 33.75rem);
   margin-bottom: 2rem;
+}
+
+.theme {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.625rem;
+}
+.theme__container {
+  display: flex;
+  flex-direction: column;
+  width: 4.5rem;
+}
+.theme__options {
+  display: flex;
+  justify-content: space-around;
+}
+.theme__text {
+  font-size: 0.75rem;
+  line-height: 0.8125rem;
+  margin-bottom: 0.3125rem;
+}
+.theme__selector {
+  border-radius: 0.8125rem;
+  background-color: var(--calculator-background);
+  height: 1.625rem;
+  width: 100%;
+  padding: 0.3125rem;
+  cursor: pointer;
+}
+.theme__indicator {
+  content: "";
+  background-color: var(--equal-button);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: relative;
+}
+.theme__indicator--1 {
+  left: 0;
+}
+.theme__indicator--2 {
+  left: calc(50% - 0.5rem);
+}
+.theme__indicator--3 {
+  left: calc(100% - 1rem);
 }
 
 .logo {
@@ -88,32 +150,62 @@
   margin-bottom: 1.5rem;
   text-align: right;
   letter-spacing: -0.05875rem;
-}
-.display--1 {
   background-color: var(--display-background-1);
-  color: var(--text-1);
-}
-.display--2 {
-  background-color: var(--display-background-2);
-  color: var(--text-2);
-}
-.display--3 {
-  background-color: var(--display-background-3);
-  color: var(--text-3);
 }
 
 .calculator {
+  width: min(100vw, 33.75rem);
+  border-radius: 0.625rem;
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-}
-.calculator--1 {
   background-color: var(--calculator-background-1);
 }
-.calculator--2 {
-  background-color: var(--calculator-background-2);
+
+.button {
+  height: 4rem;
+  border-radius: 0.625rem;
+  font-size: 2.5rem;
+  line-height: 2.3125rem;
+  font-weight: bold;
+  cursor: pointer;
 }
-.calculator--3 {
-  background-color: var(--calculator-background-3);
+.button--main {
+  background-color: var(--main-button-1);
+  box-shadow: var(--main-inset-1);
+  color: var(--main-text-1);
+}
+.button--main:active {
+  margin-top: 0.25rem;
+  height: 3.75rem;
+  box-shadow: var(--main-inset-clicked);
+}
+.button--secondary {
+  font-size: 1.75rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.03rem;
+  background-color: var(--secondary-button-1);
+  box-shadow: var(--secondary-inset-1);
+  color: white;
+}
+.button--secondary:active {
+  margin-top: 0.25rem;
+  height: 3.75rem;
+  box-shadow: var(--secondary-inset-clicked);
+}
+.button--equal {
+  grid-column: span 2;
+  background-color: var(--equal-button-1);
+  box-shadow: var(--equal-inset-1);
+  color: var(--equal-text-1);
+}
+.button--equal:active {
+  margin-top: 0.25rem;
+  height: 3.75rem;
+  box-shadow: var(--equal-inset-clicked);
+}
+
+.span-2 {
+  grid-column: span 2;
 }/*# sourceMappingURL=style.css.map */
