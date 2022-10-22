@@ -35,26 +35,42 @@
         </div>
       </div>
     </header>
-    <article class="display display--1">0</article>
-    <main class="calculator calculator--1">
-      <button class="button button--main">7</button>
-      <button class="button button--main">8</button>
-      <button class="button button--main">9</button>
-      <button class="button button--secondary">DEL</button>
-      <button class="button button--main">4</button>
-      <button class="button button--main">5</button>
-      <button class="button button--main">6</button>
-      <button class="button button--main">+</button>
-      <button class="button button--main">1</button>
-      <button class="button button--main">2</button>
-      <button class="button button--main">3</button>
-      <button class="button button--main">-</button>
-      <button class="button button--main">.</button>
-      <button class="button button--main">0</button>
-      <button class="button button--main">/</button>
-      <button class="button button--main">x</button>
-      <button class="button button--secondary span-2">RESET</button>
-      <button class="button button--equal">=</button>
-    </main>
+    <form>
+      <input
+        class="display display--1"
+        id="display"
+        type="text"
+        name="display"
+      />
+      <main class="calculator calculator--1">
+        <button class="button button--main" type="submit" value="7">7</button>
+        <button class="button button--main" type="submit" value="8">8</button>
+        <button class="button button--main" type="submit" value="9">9</button>
+        <button class="button button--secondary" type="submit" value="delete">
+          DEL
+        </button>
+        <button class="button button--main" type="submit" value="4">4</button>
+        <button class="button button--main" type="submit" value="5">5</button>
+        <button class="button button--main" type="submit" value="6">6</button>
+        <button class="button button--main" type="submit" value="+">+</button>
+        <button class="button button--main" type="submit" value="1">1</button>
+        <button class="button button--main" type="submit" value="2">2</button>
+        <button class="button button--main" type="submit" value="3">3</button>
+        <button class="button button--main" type="submit" value="-">-</button>
+        <button class="button button--main" type="submit" value=".">.</button>
+        <button class="button button--main" type="submit" value="0">0</button>
+        <button class="button button--main" type="submit" value="/">/</button>
+        <button class="button button--main" type="submit" value="x">x</button>
+        <button
+          class="button button--secondary span-2"
+          type="submit"
+          value="reset"
+        >
+          RESET
+        </button>
+        <button class="button button--equal" type="submit" value="=">=</button>
+      </main>
+    </form>
+    <script src="script.js"></script>
   </body>
 </html>
