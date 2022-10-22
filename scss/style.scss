@@ -123,8 +123,8 @@
     box-shadow: var(--main-inset);
     color: var(--main-text);
     &:active {
-      margin-top: 0.25rem;
-      height: 3.75rem;
+      margin-top: 0.125rem;
+      height: 3.875rem;
       box-shadow: var(--main-inset-clicked);
     }
   }
