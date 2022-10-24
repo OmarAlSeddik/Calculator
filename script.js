@@ -5,6 +5,7 @@ const themeSelector = document.getElementById("theme-selector");
 const indicator = document.getElementById("indicator");
 
 let currentTheme;
+display.value = localStorage.getItem("display-value");
 
 const applyTheme = () => {
   if (currentTheme === 1) {
@@ -123,18 +124,24 @@ const handleThemeChange = () => {
 
 const getValue = (input) => {
   display.value += input;
+  localStorage.setItem("display-value", display.value);
 };
 
 const calculate = () => {
-  if (display.value) display.value = eval(display.value.replace(/x/g, "*"));
+  if (display.value) {
+    display.value = eval(display.value.replace(/x/g, "*"));
+    localStorage.setItem("display-value", display.value);
+  }
 };
 
 const allClear = () => {
   display.value = "";
+  localStorage.setItem("display-value", display.value);
 };
 
 const deleteLastEntry = () => {
   display.value = display.value.slice(0, -1);
+  localStorage.setItem("display-value", display.value);
 };
 
 const handleClick = (event) => {
