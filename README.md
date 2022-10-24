@@ -2,10 +2,10 @@
 
 This is a solution to Frontend Mentor's [Calculator app challenge](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29) with bonus added functionality.
 
-# Links
+## Links
 
-[Live Link](https://frontend-mentor-calculator-26071997.netlify.app/)
-[Solution Link](https://www.frontendmentor.io/solutions/local-storage-preferred-theme-no-frameworks-mB_zubipQD).
+- [Live Link](https://frontend-mentor-calculator-26071997.netlify.app/)
+- [Solution Link](https://www.frontendmentor.io/solutions/local-storage-preferred-theme-no-frameworks-mB_zubipQD)
 
 ## Features
 
@@ -17,4 +17,4 @@ This is a solution to Frontend Mentor's [Calculator app challenge](https://www.f
 
 ## Notes
 
-No libraries or frameworks have been used in the making of this project. This project was made for the purpose of practicing my vanilla JS and CSS skills. Feel free to visit the solution page of the project to provide criticism. That would be much appreciated!
+No libraries or frameworks have been used in the making of this project. This project was made for the purpose of practicing my vanilla JS and CSS skills. Feel free to visit the solution page of the project to provide criticism and advice, that would be much appreciated!

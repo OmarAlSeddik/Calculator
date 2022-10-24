@@ -102,6 +102,7 @@
   letter-spacing: -0.05875rem;
   background-color: var(--display-background);
   color: var(--text);
+  pointer-events: none;
 }
 @media (max-width: 36rem) {
   .display {
@@ -131,23 +132,23 @@
 .button {
   height: 4rem;
   border-radius: 0.625rem;
+  cursor: pointer;
+}
+.button--main {
   font-size: 2.5rem;
   line-height: 2.3125rem;
   font-weight: bold;
-  cursor: pointer;
+  background-color: var(--main-button);
+  box-shadow: var(--main-inset);
+  color: var(--main-text);
 }
 @media (max-width: 36rem) {
-  .button {
+  .button--main {
     border-radius: 0.3125rem;
     font-size: 2rem;
     line-height: 1.8125rem;
     letter-spacing: -0.0334rem;
   }
-}
-.button--main {
-  background-color: var(--main-button);
-  box-shadow: var(--main-inset);
-  color: var(--main-text);
 }
 .button--main:hover {
   background-color: var(--main-button-hover);
@@ -165,6 +166,14 @@
   box-shadow: var(--secondary-inset);
   color: white;
 }
+@media (max-width: 36rem) {
+  .button--secondary {
+    border-radius: 0.3125rem;
+    font-size: 1.25rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.0209rem;
+  }
+}
 .button--secondary:hover {
   background-color: var(--secondary-button-hover);
 }
@@ -174,10 +183,21 @@
   box-shadow: var(--secondary-inset-clicked);
 }
 .button--equal {
+  font-size: 1.75rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.03rem;
   grid-column: span 2;
   background-color: var(--equal-button);
   box-shadow: var(--equal-inset);
   color: var(--equal-text);
+}
+@media (max-width: 36rem) {
+  .button--equal {
+    border-radius: 0.3125rem;
+    font-size: 1.25rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.0209rem;
+  }
 }
 .button--equal:hover {
   background-color: var(--equal-button-hover);
